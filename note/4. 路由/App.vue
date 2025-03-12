@@ -3,12 +3,11 @@
         <h2>Vue路由测试</h2>
     </div>
     <div class="navigate">
-        <!-- 加了replace 之后 无法通过浏览器进行回退 -->
-        <RouterLink replace to="/home" active-class="active">首页</RouterLink>
+        <RouterLink to="/home" active-class="active">首页</RouterLink>
         <br>
-        <RouterLink replace :to="{ name: 'xinwen' }" active-class="active">新闻</RouterLink>
+        <RouterLink :to="{ name: 'xinwen' }" active-class="active">新闻</RouterLink>
         <br>
-        <RouterLink replace :to="{ path: '/about' }" active-class="active">关于</RouterLink>
+        <RouterLink :to="{ path: '/about' }" active-class="active">关于</RouterLink>
     </div>
     <div class="main-content">
         <RouterView />

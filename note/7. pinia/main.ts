@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue' // app组件最后挂载
 import router from './router'
-
 // 第一步：引入pinia
 import { createPinia } from 'pinia'
 

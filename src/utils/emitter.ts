@@ -12,8 +12,8 @@ emitter.on('test2', () => {
 })
 
 // 触发事件
-emitter.emit('test1')
-emitter.emit('test1')
+emitter.emit('test1','传参')
+emitter.emit('test1','传参')
 
 // 解绑时间
 // emitter.off('test1')

@@ -13,11 +13,11 @@
             <button @click="empty">清空原始数据</button>
         </div>
         <!-- <input v-model="inputText" /> -->
-        <input :value="inputText" @input="inputText = (<HTMLInputElement>$event.target).value" />
-        <!-- <myInput v-model="myInputText"></myInput>  写当前这个等同于默认写了下方这个函数 -->
+        <!-- <input :value="inputText" @input="inputText = (<HTMLInputElement>$event.target).value" /> -->
+        <!-- <myInput v-model:myInputText="myInputText"></myInput>  写当前这个等同于默认写了下方这个函数 -->
 
         
-        <myInput :modelValue="myInputText" @update:modelValue="myInputText = $event"></myInput>
+        <myInput :modelValue="myInputText" v-model:username="username" @update:modelValue="myInputText = $event"></myInput>
     </div>
 </template>
 <script setup lang="ts" name="about">
@@ -31,7 +31,7 @@ import myInput from './my-input.vue'
 
 const inputText = ref('zhangsan')
 const myInputText = ref('wanger')
-
+const username = ref('zjn')
 const aboutStore = useAboutStore()
 
 // $subscribe  监听store里面的数据变化

@@ -1,3 +1,11 @@
+<!--
+ * @Author: zhangjianing 1026597665@qq.com
+ * @Date: 2025-06-07 22:01:33
+ * @LastEditors: zhangjianing 1026597665@qq.com
+ * @LastEditTime: 2025-06-07 22:04:12
+ * @FilePath: \vue3-test\src\App.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
     <div class="app">
         <h2>Vue路由测试</h2>
